@@ -19,6 +19,7 @@ public class CommandHandler implements CommandExecutor {
      * @param command
      * @param subCommand
      */
+    //test
     public CommandHandler(PluginCommand command, HashMap<String, CommandInterface> subCommand) {
 
         for (String key : subCommand.keySet()) {
