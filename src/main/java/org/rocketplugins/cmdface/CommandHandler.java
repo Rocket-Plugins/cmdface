@@ -49,8 +49,7 @@ public class CommandHandler implements CommandExecutor {
             if (child != null) {
                 String[] newArgs = new String[args.length - 1];
                 System.arraycopy(args, 1, newArgs, 0, newArgs.length);
-                child.Execute(sender, command, args[0], newArgs);
-                return true;
+                return child.Execute(sender, command, args[0], newArgs);
             }
         }
         return false;

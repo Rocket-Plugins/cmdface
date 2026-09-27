@@ -8,5 +8,5 @@ import org.bukkit.command.CommandSender;
 public interface CommandInterface {
     List<String> getArgs(int index);
 
-    void Execute(CommandSender commandSender, Command command, String s, String[] strings);
+    Boolean Execute(CommandSender commandSender, Command command, String s, String[] strings);
 }
